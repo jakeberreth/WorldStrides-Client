@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router";
-import MicrosoftLogin from "react-microsoft-login";
 
 import { UserContext } from "../App";
 
