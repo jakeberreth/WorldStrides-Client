@@ -12,17 +12,17 @@ const User = (props) => (
    <td>{props.user.almaMater}</td>
    <td>{props.user.type}</td>
    <td>
-     <Link style={buttonStyle} className="btn btn-warning" to={`/editUser/${props.user._id}`}>Edit</Link>
+     <Link style={buttonStyle} to={`/editUser/${props.user._id}`}>Edit</Link>
             
-     <button style={buttonStyle} className="btn btn-danger"
+     <button style={buttonStyle}
        onClick={() => {
          props.deleteUser(props.user._id);
        }}
      >
        Delete
      </button>        
-     <Link style={buttonStyle} className="btn btn-success" to={`/viewAvailability/${props.user._id}`}>Availability</Link>
-     <Link style={buttonStyle} className="btn btn-success" to={`/availableEvents/${props.user._id}`}>Events</Link>
+     <Link style={buttonStyle} to={`/viewAvailability/${props.user._id}`}>Availability</Link>
+     <Link style={buttonStyle} to={`/availableEvents/${props.user._id}`}>Events</Link>
    </td>
  </tr>
 );

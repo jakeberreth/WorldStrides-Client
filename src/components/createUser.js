@@ -200,14 +200,12 @@ const errors = {
               <br></br>
               <div className="form-group">
                 <button 
-                  className="btn btn-success"
                   type="button"
                   onClick={() => handleAddFields(index)}
                   >Add</button>
 
                 <button 
                   style={buttonStyle}
-                  className="btn btn-danger"
                   type="button"
                   onClick={() => handleRemoveFields(index)}
                   >Remove</button>
