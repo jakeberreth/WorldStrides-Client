@@ -38,7 +38,7 @@ export default function AdminCenter() {
    // When a post request is sent to the create url, we'll add a new record to the database.
    const newPerson = { ...form };
  
-   await fetch("http://localhost:2500/user/add", {
+   await fetch("https://worldstrides.herokuapp.com/user/add", {
      method: "POST",
      headers: {
        "Content-Type": "application/json",

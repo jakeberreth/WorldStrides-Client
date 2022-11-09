@@ -19,7 +19,7 @@ function Navbar() {
 
   useEffect(() => {
     async function getUsers() {
-      const response = await fetch(`http://localhost:2500/user/`);
+      const response = await fetch(`https://worldstrides.herokuapp.com/user/`);
   
       if (!response.ok) {
         const message = `An error occurred: ${response.statusText}`;

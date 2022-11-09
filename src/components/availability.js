@@ -35,7 +35,7 @@ export default function ViewAvailability() {
 
    async function fetchData() {
      const id = params.id.toString();
-     const response = await fetch(`http://localhost:2500/user/${params.id.toString()}`);
+     const response = await fetch(`https://worldstrides.herokuapp.com/user/${params.id.toString()}`);
 
      if (!response.ok) {
        const message = `Hello An error has occurred: ${response.statusText}`;
@@ -110,7 +110,7 @@ export default function ViewAvailability() {
    console.log(editedPerson);
  
    // This will send a post request to update the data in the database.
-   await fetch(`http://localhost:2500/updateUser/${params.id}`, {
+   await fetch(`https://worldstrides.herokuapp.com/updateUser/${params.id}`, {
      method: "POST",
      body: JSON.stringify(editedPerson),
      headers: {

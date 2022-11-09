@@ -26,7 +26,7 @@ export default function EditEvent() {
 
    async function fetchData() {
      const id = params.id.toString();
-     const response = await fetch(`http://localhost:2500/event/${params.id.toString()}`);
+     const response = await fetch(`https://worldstrides.herokuapp.com/event/${params.id.toString()}`);
 
      if (!response.ok) {
        const message = `Hello An error has occurred: ${response.statusText}`;
@@ -78,7 +78,7 @@ export default function EditEvent() {
    };
  
    // This will send a post request to update the data in the database.
-   await fetch(`http://localhost:2500/updateEvent/${params.id}`, {
+   await fetch(`https://worldstrides.herokuapp.com/updateEvent/${params.id}`, {
      method: "POST",
      body: JSON.stringify(editedPerson),
      headers: {

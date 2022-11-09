@@ -34,7 +34,7 @@ export default function EventList() {
  // This method fetches the records from the database.
  useEffect(() => {
    async function getEvents() {
-     const response = await fetch(`http://localhost:2500/event/`);
+     const response = await fetch(`https://worldstrides.herokuapp.com/event/`);
  
      if (!response.ok) {
        const message = `An error occurred: ${response.statusText}`;
@@ -53,7 +53,7 @@ export default function EventList() {
  
  // This method will delete a record
  async function deleteEvent(id) {
-   await fetch(`http://localhost:2500/event/${id}`, {
+   await fetch(`https://worldstrides.herokuapp.com/event/${id}`, {
      method: "DELETE"
    });
    const newEvents = events.filter((el) => el._id !== id);

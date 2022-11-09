@@ -33,7 +33,7 @@ export default function UserList() {
  // This method fetches the records from the database.
  useEffect(() => {
    async function getUsers() {
-     const response = await fetch(`http://localhost:2500/user/`);
+     const response = await fetch(`https://worldstrides.herokuapp.com/user/`);
  
      if (!response.ok) {
        const message = `An error occurred: ${response.statusText}`;
@@ -52,7 +52,7 @@ export default function UserList() {
  
  // This method will delete a record
  async function deleteUser(id) {
-   await fetch(`http://localhost:2500/user/${id}`, {
+   await fetch(`https://worldstrides.herokuapp.com/user/${id}`, {
      method: "DELETE"
    });
    const newUsers = users.filter((el) => el._id !== id);

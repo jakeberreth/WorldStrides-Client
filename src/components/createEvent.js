@@ -42,7 +42,7 @@ export default function CreateEvent() {
    newEvent.startDate = startDateString;
    newEvent.endDate = endDateString;
  
-   await fetch("http://localhost:2500/event/add", {
+   await fetch("https://worldstrides.herokuapp.com/event/add", {
      method: "POST",
      headers: {
        "Content-Type": "application/json",
