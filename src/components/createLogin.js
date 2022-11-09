@@ -128,7 +128,6 @@ export default function CreateLogin() {
          />
        </div>
        <br></br>
-       <MicrosoftLogin clientId={form.name} authCallback={authHandler} />
        <div className="form-group">
          <input
            type="submit"
