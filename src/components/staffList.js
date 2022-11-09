@@ -14,13 +14,13 @@ const User = (props) => (
    <td>
      <Link style={buttonStyle} to={`/editUser/${props.user._id}`}>Edit</Link>
             
-     <button style={buttonStyle}
+     <Link style={buttonStyle}
        onClick={() => {
          props.deleteUser(props.user._id);
        }}
      >
        Delete
-     </button>        
+     </Link>        
      <Link style={buttonStyle} to={`/viewAvailability/${props.user._id}`}>Availability</Link>
      <Link style={buttonStyle} to={`/availableEvents/${props.user._id}`}>Events</Link>
    </td>

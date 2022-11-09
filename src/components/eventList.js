@@ -16,17 +16,16 @@ const Event = (props) => (
    <td>{props.event.endDate}</td>
    <td>
      <Link style={buttonStyle} to={`/editEvent/${props.event._id}`}>Edit</Link>
-     <button style={buttonStyle}
+     <Link style={buttonStyle}
        onClick={() => {
          props.deleteEvent(props.event._id);
        }}
      >
       Delete
-     </button> 
+     </Link> 
    </td>
  </tr>
 );
-
  
 export default function EventList() {
  const [events, setEvents] = useState([]);
