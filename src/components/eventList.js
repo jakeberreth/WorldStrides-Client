@@ -15,8 +15,8 @@ const Event = (props) => (
    <td>{props.event.startDate}</td>
    <td>{props.event.endDate}</td>
    <td>
-     <Link style={buttonStyle} className="btn btn-warning" to={`/editEvent/${props.event._id}`}>Edit</Link>
-     <button style={buttonStyle} className="btn btn-danger"
+     <Link style={buttonStyle} to={`/editEvent/${props.event._id}`}>Edit</Link>
+     <button style={buttonStyle}
        onClick={() => {
          props.deleteEvent(props.event._id);
        }}

@@ -261,14 +261,12 @@ const buttonStyle =
               <hr></hr>
               <div className="form-group">
                 <button 
-                  className="btn btn-success"
                   type="button"
                   onClick={() => handleAddFields(index)}
                   >Add</button>
                   
                 <button 
                   style={buttonStyle}
-                  className="btn btn-danger"
                   type="button"
                   disable={index === 0}
                   onClick={() => handleRemoveFields(index)}
@@ -284,7 +282,6 @@ const buttonStyle =
          <input
            type="submit"
            value="Update Account"
-           className="btn btn-primary"
          />
        </div>
      </form>

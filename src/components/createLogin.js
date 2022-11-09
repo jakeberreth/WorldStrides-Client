@@ -131,7 +131,6 @@ export default function CreateLogin() {
          <input
            type="submit"
            value="Sign In"
-           className="btn btn-primary"
          />
        </div>
      </form>

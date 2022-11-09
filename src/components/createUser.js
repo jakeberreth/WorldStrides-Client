@@ -261,7 +261,6 @@ const errors = {
          <input style={submitStyle}
            type="submit"
            value="Create Account"
-           className="btn btn-primary"
          />
        </div>
      </form>

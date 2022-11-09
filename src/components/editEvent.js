@@ -245,7 +245,6 @@ const handleEndChange = (event) => {
       <input
         type="submit"
         value="Update Event"
-        className="btn btn-primary"
       />
     </div>
   </form>
