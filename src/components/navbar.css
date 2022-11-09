@@ -1,0 +1,35 @@
+.title 
+{
+    margin-left: 100px;
+}
+.a
+{
+    color:black;
+}
+.div
+{
+    color:red;
+    font-size: small;
+}
+
+
+a:hover
+{
+    color:red;
+}
+
+
+.h3
+{
+    font-size: 50px;
+}
+
+.formStyle
+{
+    color : green;
+    font-size : 150px;
+    align-items: center;
+
+
+}
+

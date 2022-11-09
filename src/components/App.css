@@ -1,0 +1,153 @@
+
+.logo-img
+{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.avata-img
+{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.app {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    background-color: #f8f9fd;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    height: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  /* input[type="Submit"] {
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font:bold;
+    display: flex;
+    background: #01d28e;
+    border: 10px solid;
+    color: #fff;
+    padding: 10px 20px;
+  } */
+  
+  input[type="Submit"]:hover {
+    background: greenyellow
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .login-form {
+    background-color: white;
+    padding: 100rem;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+  }
+  
+  .list-container {
+    display: flex;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .title {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px;
+  }
+
+  .GFG
+  {
+    font-size: medium;
+    color: aqua;
+  }
+
+.btn
+{
+  background-color : dodgerblue;
+  border: none;
+  color: blue;
+  padding : 12px 16px;
+  font-size : 16px;
+  cursor: pointer;
+  display: flex;
+
+}
+
+.btn:hover
+{
+  background-color: royalblue;
+}
+
+.container 
+{
+  position: relative;
+  width: 50%;
+}
+
+.container img{
+  width : 100%;
+  height:auto;
+}
+
+.loginButton
+{
+  width : 100%;
+  height: '30%';
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  cursor: pointer;
+  background-color: green;
+  color: white;
+
+}
+
+.container .btn
+{
+  position : absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 17px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover
+{
+  background-color: black;
+}
